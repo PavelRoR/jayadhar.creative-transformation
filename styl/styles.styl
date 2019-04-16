@@ -116,20 +116,20 @@ footer
 	font-family: "CormorantBoldItalic", serif;
 	line-height: 1;
 	text-align: center;
-	&:before
+	&:after
 		content ''
 		display block
 		width 192px
 		height 47px
 		background-repeat no-repeat
-		margin 0 auto 10px
+		margin 0 auto 20px
 .general_title_dark
 	color #16272f
-	&:before
+	&:after
 		background-image url(../img/title_decor_dark.png)
 .general_title_light
 	color #16272f
-	&:before
+	&:after
 		background-image url(../img/title_decor_light.png)
 .button
 	display block
@@ -151,7 +151,13 @@ footer
 		text-decoration: none
 		color #fff
 		background-color: rgb(231,53,53)
-
+.general_list
+	li
+		color: rgb(22, 39, 47);
+		line-height: 1.6;
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
 @import 'main/header'
 @import 'main/main'
 @import 'main/mail_sec'
