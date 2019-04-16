@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'Akrobat';
+	src: url('../fonts/Akrobat.eot');
+	src: url('../fonts/Akrobat.eot') format('embedded-opentype'),
+		 url('../fonts/Akrobat.woff2') format('woff2'),
+		 url('../fonts/Akrobat.woff') format('woff'),
+		 url('../fonts/Akrobat.ttf') format('truetype'),
+		 url('../fonts/Akrobat.svg#Akrobat') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Akrobatbold';
+	src: url('../fonts/Akrobatbold.eot');
+	src: url('../fonts/Akrobatbold.eot') format('embedded-opentype'),
+		 url('../fonts/Akrobatbold.woff2') format('woff2'),
+		 url('../fonts/Akrobatbold.woff') format('woff'),
+		 url('../fonts/Akrobatbold.ttf') format('truetype'),
+		 url('../fonts/Akrobatbold.svg#Akrobatbold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Akrobatlight';
+	src: url('../fonts/Akrobatlight.eot');
+	src: url('../fonts/Akrobatlight.eot') format('embedded-opentype'),
+		 url('../fonts/Akrobatlight.woff2') format('woff2'),
+		 url('../fonts/Akrobatlight.woff') format('woff'),
+		 url('../fonts/Akrobatlight.ttf') format('truetype'),
+		 url('../fonts/Akrobatlight.svg#Akrobatlight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Cormorantbolditalic';
+	src: url('../fonts/Cormorantbolditalic.eot');
+	src: url('../fonts/Cormorantbolditalic.eot') format('embedded-opentype'),
+		 url('../fonts/Cormorantbolditalic.woff2') format('woff2'),
+		 url('../fonts/Cormorantbolditalic.woff') format('woff'),
+		 url('../fonts/Cormorantbolditalic.ttf') format('truetype'),
+		 url('../fonts/Cormorantbolditalic.svg#Cormorantbolditalic') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 16px
+	font-family: "Arial", sans-serif
+	background-color: #CFC3A3
+	background-image url(../img/body_bg.jpg)
+	background-repeat no-repeat
+	background-size: cover
+	color #16272f
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video_wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.general_title
+	font-size: 38px;
+	font-family: "CormorantBoldItalic", serif;
+	line-height: 1;
+	text-align: center;
+	&:before
+		content ''
+		display block
+		width 192px
+		height 47px
+		background-repeat no-repeat
+		margin 0 auto 10px
+.general_title_dark
+	color #16272f
+	&:before
+		background-image url(../img/title_decor_dark.png)
+.general_title_light
+	color #16272f
+	&:before
+		background-image url(../img/title_decor_light.png)
+.button
+	display block
+	text-align: center
+	border-radius: 20px;
+	background-color: rgb(255, 0, 0);
+	width 100%
+	max-width: 240px;
+	margin 0 auto
+	height: 54px;
+	line-height: 54px;
+	color #fff
+	text-decoration: none
+	transition: all .3s ease
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		text-decoration: none
+		color #fff
+		background-color: rgb(231,53,53)
+
+@import 'main/main'
+@import 'main/mail_sec'
+@import 'main/for'
+@import 'main/plan'
+@import 'main/get'
+@import 'main/author'
+@import 'main/revs'
+@import 'main/last'
+@import 'main/last_mail_sec'
+@import 'main/footer'
+@import 'main/medias'
