@@ -1,0 +1,138 @@
+#mail_section
+	padding 40px 0
+	background-color: rgb(255,170,79)
+	background-image url(../img/decor_top.png),url(../img/decor_lower.png)
+	background-repeat: repeat-x
+	background-position: center bottom, center top
+.mail_section_title
+	font-size: 24px;
+	font-family: "Akrobat", sans-serif;
+	color: rgb(22, 39, 47);
+	line-height: 1.083;
+	margin-bottom: 12px
+	span
+		display block
+		margin-top: 12px
+		font-size: 28px
+		font-family: 'CormorantBoldItalic',serif;
+.form_wrapper
+	background-color #fff
+	border-radius: 20px
+	overflow hidden
+	width 100%
+	max-width 445px
+.email
+	height: 54px;
+	line-height: 54px;
+	border-radius: 20px
+	font-size: 24px;
+	font-family: "Akrobat", sans-serif;
+	border none
+	color: rgb(22, 39, 47);
+	text-align: left;
+	text-indent: 20px
+	width: 265px
+	float: left
+@-webkit-keyframes autofill {
+	to {
+		color: rgb(22, 39, 47);
+		background: #fff;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-animation-name: autofill;
+	-webkit-animation-fill-mode: both;
+}
+.button_mail
+	float: right
+	width 176px
+	font-size: 24px
+.alert_message {
+	display: none;
+	text-align: center;
+	font-size: 16px;
+	padding-top: 10px;
+	color: #f00
+}
+.checking {
+	display: table;
+	width 100%
+	// max-width 500px
+	margin: 10px auto 0;
+	text-align: left
+}
+
+.checking .check_label {
+	color: #000
+	line-height: 20px;
+	cursor: pointer;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 25px;
+	text-align: left;
+	font-size: 14px
+}
+
+.checking .check_label a {
+	color: #000
+	border-bottom: 1px dashed
+	display: inline
+	text-decoration: none
+}
+
+.checking .check_label:before {
+	content: '';
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border none
+	border-radius: 3px
+}
+
+.checking .check_label:after {
+	content: '';
+	position: absolute;
+	left: 7px;
+	top: -10px;
+	width: 7px;
+	height: 11px;
+	background-color: transparent;
+	opacity: 0;
+	border-bottom: 3px solid #fff
+	border-right: 3px solid #fff
+	-webkit-transform: rotate(41deg);
+	-ms-transform: rotate(41deg);
+	transform: rotate(41deg);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.check {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	width: 0;
+	height 0;
+	border: 0;
+	left -99999px;
+}
+
+.check:checked + .check_label:before {
+	background-color: rgb(0,86,194)
+
+}
+
+.check:checked + .check_label:after {
+	opacity: 1;
+	top: 4px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
