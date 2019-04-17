@@ -1,7 +1,7 @@
 -var head_url = 'https://jayadhar.mastervision.su/creative-transformation/';
 -var head_title = '«Технология творческой трансформации»';
 -var head_description = 'Бесплатный 2-хдневный онлайн-интенсив Ади Джайадхара';
--var head_img = 'img/banner.jpg';
+-var head_img = 'https://jayadhar.mastervision.su/creative-transformation/img/banner.jpg';
 -var styles = 'css/styles.css';
 
 <!DOCTYPE html>
@@ -23,8 +23,8 @@ html(lang="ru")
 		include pug/main/last_mail_sec
 		include pug/main/footer
 		include pug/scripts
-		<!--BEGIN JIVOSITE CODE-->
-		//script
-			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
-		<!--END JIVOSITE CODE-->
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+		script(type='text/javascript')
+			| (function(){ var widget_id = 'hpJdJNkknY';var d=document;var w=window;function l(){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);} if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);} else{w.addEventListener('load',l,false);}}})();
+		<!-- {/literal} END JIVOSITE CODE -->
 		include pug/scripts/body_bottom_scripts
