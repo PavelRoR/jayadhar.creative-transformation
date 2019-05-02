@@ -2,7 +2,7 @@
 //@prepros-prepend bootstrap.min.js
 //@prepros-prepend jquery.fancybox.min.js
 
-$(document).ready(function () {
+
     /* Работа формы */
     $(function () {
         var check = $('.check', this),
@@ -78,11 +78,23 @@ $(document).ready(function () {
         });
     });
     $(function () {
-
-        $(".video_wrapper img").click(function () {
+        $(".video_wrapper_revs .video_rev_img").click(function () {
             var a = $(this).parent().attr("data-youtube");
-            $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>')
+            $(this).parent().html('<iframe  src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>');
         });
     });
+    
+    $(function () {
+        $('#video_revs').on('slide.bs.carousel', function () {
+            $('.video_wrapper_revs').each(function(){
+                var l =$(this).attr('data-img');
+                $(this).html('<img class="video_rev_img" src="'+l+'" alt="Видео отзыв">');
+            });
+            $(".video_wrapper_revs .video_rev_img").click(function () {
+                var a = $(this).parent().attr("data-youtube");
+                $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>');
+            });
+          });
+    });
+
     /*Конец документа*/
-});
